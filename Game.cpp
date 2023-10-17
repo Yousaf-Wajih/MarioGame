@@ -58,11 +58,11 @@ void Begin()
 		}
 	}
 
-	music.openFromFile("music.ogg");
+	music.openFromFile("./resources/sounds/music.ogg");
 	music.setLoop(true);
 	music.setVolume(25);
 
-	font.loadFromFile("font.ttf");
+	font.loadFromFile("./resources/font.ttf");
 	coinsText.setFillColor(sf::Color::White);
 	coinsText.setOutlineColor(sf::Color::Black);
 	coinsText.setOutlineThickness(1.0f);
@@ -71,7 +71,7 @@ void Begin()
 	backgroundShape.setFillColor(sf::Color(0, 0, 0, 150));
 	backgroundShape.setOrigin(0.5f, 0.5f);
 
-	mapImage.loadFromFile("map.png");
+	mapImage.loadFromFile("./resources/map.png");
 
 	Restart();
 }
